@@ -2,8 +2,20 @@ const express = require('express');
 const exphbs  = require('express-handlebars');
 const app = express();
 const path = require('path');
+const request = require('request');
 
 const PORT = process.env.PORT || 5000;
+
+// APIk3y pk_4ff4c2aeffc3428e9204ed61ae9cc776
+
+const key = 'pk_4ff4c2aeffc3428e9204ed61ae9cc776';
+request('https://cloud.iexapis.com/stable/stock/aapl/quote?token=' + key, {json: true}, (err, res, body) => {
+    if (err) {return console.log(err);}
+    if (res.statusCode === 200){
+        console.log(body);
+    };
+});
+
 
 // Set Handlebars Middleware
 app.engine('handlebars', exphbs.engine());
