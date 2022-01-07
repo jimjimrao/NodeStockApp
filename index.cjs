@@ -9,7 +9,6 @@ const PORT = process.env.PORT || 5000;
 
 // use body parser middleware
 app.use(bodyParser.urlencoded({extended:false}));
-// APIk3y pk_4ff4c2aeffc3428e9204ed61ae9cc776
 
 const key = 'pk_4ff4c2aeffc3428e9204ed61ae9cc776';
 // Call API function
@@ -34,7 +33,7 @@ app.get('/', (req, res) => {
         res.render('home',{
             stock: doneAPI
         });
-    });
+    },"GOOG");
 });
 
 // Set handlebar index POST route
