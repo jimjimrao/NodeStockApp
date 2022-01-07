@@ -9,9 +9,12 @@ const PORT = process.env.PORT || 5000;
 app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
 
+const otherstuff = "hello!!!!";
 // Set handlebar routes
 app.get('/', (req, res) => {
-    res.render('home');
+    res.render('home',{
+        stuff: otherstuff
+    });
 });
 
 
