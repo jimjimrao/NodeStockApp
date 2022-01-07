@@ -1,2 +1,11 @@
-<h1>This is my Handlebars Homepage</h1>
-<p>{{ stuff }}</p>
+<div class="jumbotron">
+    <h1 class="display-4">{{ stock.companyName}} ({{ stock.symbol}})</h1>
+        <strong>Latest Price: </strong>${{ stock.latestPrice }} <br/>
+        <strong>52 Week High: </strong>${{ stock.week52High }} <br/>
+        <strong>52 Week Low: </strong>${{ stock.week52Low }} <br/>
+        <strong>Market Cap: </strong>${{ stock.marketCap }} <br/>
+        <strong>PE Ratio: </strong> {{ stock.peRatio }} <br/>
+        <strong>Volume: </strong> {{ stock.volume }} <br/>
+</div>
+
+
