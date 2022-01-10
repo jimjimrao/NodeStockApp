@@ -26,7 +26,7 @@ function call_api(finishedAPI,ticker){
 app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
 
-const otherstuff = "hello!!!!";
+
 // Set handlebar index GET route
 app.get('/', (req, res) => {
     call_api(function(doneAPI){

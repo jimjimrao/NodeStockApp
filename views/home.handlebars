@@ -9,4 +9,37 @@
         <strong>Volume: </strong> {{ stock.volume }} <br/>
 </div>
 
+<br><br>
+<br><br>
 
+
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Today:
+            </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <strong>Open: </strong>${{ stock.open }} <br/>
+                <strong>Close: </strong>${{ stock.close }} <br/> <br/>
+                <strong>High: </strong>${{ stock.high }} <br/>
+                <strong>Low: </strong>${{ stock.low }} <br/>
+            </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                After Hours:
+            </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"
+                ><strong>Price: </strong>${{ stock.extendedPrice }} <br/>
+                <strong>Price Change: </strong>${{ stock.extendedChange }} <br/>
+                <strong>% Change: </strong>{{  stock.extendedChangePercent  }} <br/>
+        </div>
+    </div>
+</div>
