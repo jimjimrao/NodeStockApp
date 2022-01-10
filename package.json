@@ -1,11 +1,10 @@
 {
   "name": "nodestock",
   "version": "1.0.0",
-  "description": "",
   "main": "index.cjs",
   "type": "module",
   "scripts": {
-    "start": "enode index",
+    "start": "node index.cjs",
     "dev": "nodemon index"
   },
   "keywords": [],
@@ -19,5 +18,14 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimjimrao/NodeStockApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jimjimrao/NodeStockApp/issues"
+  },
+  "homepage": "https://github.com/jimjimrao/NodeStockApp#readme",
+  "description": ""
 }
